@@ -11,7 +11,7 @@ export const TasksColumn: React.FC = () => {
     const [loading, setLoading] = useState(true);
     const [allTodos, setAllTodos] = useState<TaskProps[]>();
     const [pageNum, setPageNum] = useState(1);
-    const [lastElement, setLastElement] = useState<HTMLDivElement|null>(null);
+    const [lastElement, setLastElement] = useState<HTMLDivElement | null>(null);
 
     const observer = useRef(
         new IntersectionObserver((entries) => {
@@ -69,23 +69,26 @@ export const TasksColumn: React.FC = () => {
             index === allTodos.length - 1 &&
             !loading &&
             pageNum <= TOTAL_PAGES ?
-                <div className={styles.tasksColumn__task} ref={setLastElement}>
+                <div className={styles.tasksColumn__task}
+                     ref={setLastElement}
+                     key={index}
+                >
                     <Task
                         time={task.time}
                         title={task.title}
                         description={task.description}
                         isDone={task.isDone}
                         tags={task.tags}
-                        key={index}/>
+                    />
                 </div> :
-                <div className={styles.tasksColumn__task}>
+                <div className={styles.tasksColumn__task} key={index}>
                     <Task
                         time={task.time}
                         title={task.title}
                         description={task.description}
                         isDone={task.isDone}
                         tags={task.tags}
-                        key={index}/>
+                        />
                 </div>
 
         ))}
