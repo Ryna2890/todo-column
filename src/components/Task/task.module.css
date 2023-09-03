@@ -1,0 +1,52 @@
+.task {
+    display: flex;
+    max-width: 255px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 0 1px 2px 0 #D0DAEB, 0 0 2px 0 #EEF4FE;
+}
+
+.task__title {
+    overflow: hidden;
+    color: #3D8FEC;
+    margin: 0;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.task__time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.task__description {
+    overflow: hidden;
+    color: #555;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.task__footer {
+    display: flex;
+    width: 100%;
+    gap: 4px;
+}

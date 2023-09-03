@@ -1,0 +1,30 @@
+.custom_checkbox {
+    margin: 4px 8px 3px 4px;
+}
+
+.custom_checkbox:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border: 1px solid #AAB7D4;
+    border-radius: 4px;
+    background: #F8FAFB;
+
+}
+
+.custom_checkbox:hover:before {
+    border-color: #b3d7ff;
+}
+
+.custom_checkbox:checked:before {
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/Icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    background-size: 10px 8px;
+}

@@ -1,0 +1,31 @@
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.tag_first {
+    padding: 1px 6px 2px 6px;
+    border-radius: 4px;
+    background: #B233A6;
+    color: #FFF;
+}
+
+.tag_second {
+    padding: 1px 0 2px 6px;
+    border-radius: 4px 0 0 4px;
+    background: #EBEEF6;
+    color:#616C82;
+}
+
+.tag__arrow {
+    width: 12px;
+    height: 100%;
+    object-fit: cover;
+}
